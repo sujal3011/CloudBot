@@ -22,7 +22,7 @@ section
 .form-box{
     position: relative;
     width :400px;
-    height: 450px;
+    height: 500px;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
@@ -30,8 +30,9 @@ section
     display :flex;
     justify-content: center;
     align-items:center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-h2{
+h3{
     font-size: 2em;
     color: white;
     text-align:center;
@@ -42,6 +43,7 @@ h2{
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid white;
+    transition: all 1s ease-in-out;
 }
 .inputbox label{
     position : absolute;
@@ -52,10 +54,11 @@ h2{
     font-size: 1em;
     pointer-events: none;
     transition: 2s;
+    transition: all 1s ease-in-out;
 }
 input:focus ~ label,
 input:valid ~ label,{
-    top: -5px;
+    top: -10px;
 
 }
 
@@ -107,13 +110,31 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+    /* font-family: "montserrat"; */
     font-size: 1em;
     font-weight: 600;
+    transition :0.8s;
+    
 }
 .register{
     font-size: 0.9em;
     color: white;
     text-align: center;
     margin:25px 0 10px;
+
+}
+main{
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../wallpaperflare.com_wallpaper (1).jpg')no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+h1{
+    color:white;
 
 }
