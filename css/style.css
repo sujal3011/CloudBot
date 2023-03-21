@@ -57,8 +57,8 @@ h3{
     transition: all 1s ease-in-out;
 }
 input:focus ~ label,
-input:valid ~ label,{
-    top: -10px;
+input:valid ~ label{
+    top: -5px;
 
 }
 
@@ -137,4 +137,50 @@ main{
 h1{
     color:white;
 
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture{
+    height: 45px;
+}
+
+#current_user{
+    color: white;
+    margin-right: 13px;
+    font-weight: bold;
+}
+
+
+.main_box{
+    width: 70%;
+    height: 60vh;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    
+}
+
+#chat-input{
+    width: 60%;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    outline: none;
+    border: none;
+}
+.question-input{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
