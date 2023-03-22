@@ -1,3 +1,9 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
+OPEN_AI_KEY = os.getenv("OPEN_AI_KEY")
+
 
 class Config(object):
     DEBUG = True
@@ -5,7 +11,7 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     SECRET_KEY = "this-is-a-super-secret-key"
-    OPENAI_KEY = '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'
+    OPENAI_KEY = OPEN_AI_KEY
 
 config = {
     'development': DevelopmentConfig,
